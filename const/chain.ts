@@ -6,7 +6,7 @@ const CustomChain: Chain = {
   chainId: 7171,
   rpc: ["https://connect.bit-rock.io"],
   nativeCurrency: {
-    name: "BROCK",
+    name: "Bitrock",
     symbol: "BROCK",
     decimals: 18,
   },
