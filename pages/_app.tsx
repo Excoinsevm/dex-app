@@ -4,7 +4,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import type { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
+// Note the specific typing for the Component prop
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ThirdwebProvider
       activeChain={CustomChain}
@@ -15,4 +16,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </ChakraProvider>
     </ThirdwebProvider>
   );
-}
+};
+
+export default MyApp;
