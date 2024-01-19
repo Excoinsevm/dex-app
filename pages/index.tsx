@@ -11,7 +11,8 @@ import {
   Spinner,
   useToast,
 } from "@chakra-ui/react";
-import { CustomChain, DEX_ADDRESS, TOKEN_ADDRESS } from "@/const/details";
+import { DEX_ADDRESS, TOKEN_ADDRESS } from "@/const/details";
+import CustomChain from "../const/chain";
 import {
   ConnectWallet,
   resolveIpfsUri,
