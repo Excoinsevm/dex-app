@@ -11,7 +11,7 @@ import {
   Spinner,
   useToast,
 } from "@chakra-ui/react";
-import { ACTIVE_CHAIN, DEX_ADDRESS, TOKEN_ADDRESS } from "@/const/details";
+import { CustomChain, DEX_ADDRESS, TOKEN_ADDRESS } from "@/const/details";
 import {
   ConnectWallet,
   resolveIpfsUri,
@@ -99,7 +99,7 @@ export default function Home() {
   const executeSwap = async () => {
     setLoading(true);
     if (isMismatched) {
-      switchChain(ACTIVE_CHAIN.chainId);
+      switchChain(CustomChain.chainId);
       setLoading(false);
       return;
     }
@@ -110,7 +110,7 @@ export default function Home() {
           status: "success",
           title: "Swap Successful",
           description: `You have successfully swapped your ${
-            ACTIVE_CHAIN.nativeCurrency.symbol
+            CustomChain.nativeCurrency.symbol
           } to ${symbol || "tokens"}.`,
         });
       } else {
@@ -123,7 +123,7 @@ export default function Home() {
           title: "Swap Successful",
           description: `You have successfully swapped your ${
             symbol || "tokens"
-          } to ${ACTIVE_CHAIN.nativeCurrency.symbol}.`,
+          } to ${CustomChain.nativeCurrency.symbol}.`,
         });
       }
       setLoading(false);
@@ -186,7 +186,7 @@ export default function Home() {
             max={nativeBalance?.displayValue}
             value={nativeValue}
             setValue={setNativeValue}
-            tokenImage={resolveIpfsUri(ACTIVE_CHAIN.icon!.url)}
+            tokenImage={resolveIpfsUri(CustomChain.icon!.url)}
           />
 
           <Button
