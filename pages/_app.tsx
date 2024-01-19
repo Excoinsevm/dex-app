@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
       activeChain={CustomChain}
-      supportedChains=={[CustomChain]}
+      supportedChains={[CustomChain]}
     >
       <ChakraProvider>
         <Component {...pageProps} />
