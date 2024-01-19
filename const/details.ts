@@ -1,4 +1,4 @@
-import { Chain, Mumbai } from "@thirdweb-dev/chains";
+import CustomChain from "../const/chain";
 
 export const TOKEN_ADDRESS: string =
   "0x9b84D0E4fc807CB664aFdBF9E7096bed3a7aB18A";
