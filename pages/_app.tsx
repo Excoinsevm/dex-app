@@ -11,7 +11,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       supportedChains={[CustomChain]}
     >
       <ChakraProvider>
-        <Component {...pageProps} />
+        {Component && <Component {...pageProps} />}
       </ChakraProvider>
     </ThirdwebProvider>
   );
