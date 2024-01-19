@@ -1,5 +1,4 @@
 import { Box, Button, HStack, Image, Input } from "@chakra-ui/react";
-import { resolveIpfsUri } from "@thirdweb-dev/react";
 import React from "react";
 
 type Props = {
