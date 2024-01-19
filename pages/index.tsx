@@ -187,7 +187,7 @@ export default function Home() {
             max={nativeBalance?.displayValue}
             value={nativeValue}
             setValue={setNativeValue}
-            tokenImage={resolveIpfsUri(CustomChain.icon!.url)}
+            tokenImage="https://imgur.com/mWUjMun.png"
           />
 
           <Button
