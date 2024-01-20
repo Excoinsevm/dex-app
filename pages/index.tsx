@@ -15,7 +15,6 @@ import { DEX_ADDRESS, TOKEN_ADDRESS } from "@/const/details";
 import CustomChain from "../const/chain";
 import {
   ConnectWallet,
-  resolveIpfsUri,
   toEther,
   toWei,
   useAddress,
