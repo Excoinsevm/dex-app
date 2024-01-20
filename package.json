@@ -16,13 +16,13 @@
     "@thirdweb-dev/react": "^3.11.7",
     "@thirdweb-dev/sdk": "^3.10.10",
     "@types/node": "18.15.11",
-    "@types/react": "18.0.35",
-    "@types/react-dom": "18.0.11",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
     "ethers": "5",
     "framer-motion": "^10.12.2",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.4"
+    "typescript": "5.3.3"
   }
 }
