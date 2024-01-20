@@ -2,9 +2,9 @@ import CustomChain from "../const/chain";
 import "@/styles/globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
-import type { NextComponentType } from "next";
+import type { AppProps } from "next/app";
 
-const MyApp: NextComponentType = ({ Component, pageProps }) => {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
     <ThirdwebProvider
       activeChain={CustomChain}
